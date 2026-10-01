@@ -1,0 +1,136 @@
+/* GitHub Repositories section — mengikuti tema neo-brutalism */
+
+.section-subtitle {
+  margin: 8px 0 0;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.github-profile-link {
+  color: #ff66a3;
+  font-weight: 900;
+  text-decoration: none;
+  border-bottom: 2px solid #ff66a3;
+}
+
+.github-profile-link:hover {
+  color: #000;
+  border-bottom-color: #000;
+}
+
+.page.night-mode .github-profile-link {
+  color: #ff66a3;
+  border-bottom-color: #ff66a3;
+}
+
+.page.night-mode .github-profile-link:hover {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.github-status {
+  width: 100%;
+  padding: 32px 24px;
+  border: 3px solid #000;
+  background: #fff;
+  box-shadow: 6px 6px 0 #000;
+  text-align: center;
+}
+
+.github-status p {
+  margin: 0 0 16px;
+  font-weight: 700;
+}
+
+.github-status--error {
+  border-color: #ff66a3;
+}
+
+.page.night-mode .github-status {
+  background: #1a1a1a;
+  border-color: #fff;
+  box-shadow: 6px 6px 0 #fff;
+  color: #fff;
+}
+
+.github-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  width: 100%;
+  overflow: visible;
+}
+
+.github-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 220px;
+  overflow: visible;
+}
+
+.github-card-title {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 900;
+  word-break: break-word;
+}
+
+.github-card-title:hover {
+  color: #000;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.github-card-desc {
+  flex: 1;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.github-lang {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+.github-meta {
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.github-footer-link {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.reveal-on-scroll .github-card {
+  opacity: 0;
+  animation: none;
+}
+
+.reveal-on-scroll.is-visible .github-card {
+  animation: contentReveal 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.reveal-on-scroll.is-visible .github-card:nth-child(1) { animation-delay: 0.05s; }
+.reveal-on-scroll.is-visible .github-card:nth-child(2) { animation-delay: 0.12s; }
+.reveal-on-scroll.is-visible .github-card:nth-child(3) { animation-delay: 0.19s; }
+.reveal-on-scroll.is-visible .github-card:nth-child(4) { animation-delay: 0.26s; }
+.reveal-on-scroll.is-visible .github-card:nth-child(5) { animation-delay: 0.33s; }
+.reveal-on-scroll.is-visible .github-card:nth-child(6) { animation-delay: 0.40s; }
+
+@media (max-width: 900px) {
+  .github-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .github-grid {
+    grid-template-columns: 1fr;
+  }
+}
